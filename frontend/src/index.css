@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Instrument+Sans:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Bricolage Grotesque", system-ui, sans-serif;
+  --font-sans: "Instrument Sans", system-ui, sans-serif;
+  --color-paper: #eef2f5;
+  --color-ink: #14213d;
+  --color-tag: #f2c14e;
+  --color-found: #1f7a6d;
+  --color-lost: #c8452d;
+  --color-line: #cfd8e0;
+}
+body { @apply bg-paper text-ink font-sans; }
+h1, h2, h3 { @apply font-display; }
+:focus-visible { outline: 3px solid var(--color-ink); outline-offset: 2px; }
